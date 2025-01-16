@@ -22,7 +22,7 @@ impl PublicKey {
     pub const ED25519_TYPE_URL: &'static str = "/cosmos.crypto.ed25519.PubKey";
 
     /// Protobuf [`Any`] type URL for secp256k1 public keys
-    pub const SECP256K1_TYPE_URL: &'static str = "/cosmos.crypto.secp256k1.PubKey";
+    pub const SECP256K1_TYPE_URL: &'static str = "/ethermint.crypto.v1.ethsecp256k1.PubKey";
 
     /// Parse public key from Cosmos JSON format.
     pub fn from_json(s: &str) -> Result<Self> {
